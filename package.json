@@ -1,0 +1,46 @@
+{
+  "name": "Lireddit-Server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/connect-redis": "^0.0.16",
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/express-session": "^1.17.3",
+    "@types/ioredis": "^4.17.9",
+    "@types/node": "^14.14.11",
+    "@types/nodemailer": "^6.4.0",
+    "@types/redis": "^2.8.28",
+    "@types/uuid": "^8.3.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.19.0",
+    "argon2": "^0.27.1",
+    "connect-redis": "^5.0.0",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "graphql": "^15.4.0",
+    "ioredis": "^4.19.4",
+    "nodemailer": "^6.4.17",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node-dev": "^1.1.1",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.29",
+    "typeorm-naming-strategies": "^2.0.0",
+    "uuid": "^8.3.2"
+  }
+}
